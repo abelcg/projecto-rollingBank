@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+.fuente_marca{
+    font-family: 'Black Han Sans', sans-serif;
+    font-size:x-large;
+}
+
+.bg_footer{
+    background: #343a40;
+}
+
+.link_padding{
+    padding: 5px 0;
+}
+
+.link_padding-reset{
+    padding: 0!Important;
+}
+
+.accordion-button::after{
+   background-image: none;
+}
+
+.accordion-button:not(.collapsed)::after{
+  background-image: none;
+}
+
+/* configuro las medias queries */
+/* celulares */
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+
+  .carousel-inner .carousel-item img{
+    object-fit:cover;
+    object-position: center;
+    overflow:visible;
+    height: 24vh;
+}
+}
+
+/* dispositivos extra small */
+@media all and (max-width: 319px) {
+   
+  .carousel-inner .carousel-item img{
+    object-fit:cover;
+    object-position: center;
+    overflow:visible;
+    height: 22vh;
+}
+  .font-side-sm{
+    font-size: medium;
+  }
+}
